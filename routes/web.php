@@ -44,11 +44,17 @@ Route::group(['prefix' => 'backend', 'middleware' => ['auth']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('backend.dashboard');
     Route::resource('/setting', SettingController::class);
 <<<<<<< HEAD
+<<<<<<< HEAD
     Route::get('settings/banners', [SettingController::class,'bannerIndex'])->name('setting.banner');
     Route::get('settings/addbanner', [SettingController::class,'bannerCreate'])->name('setting.addbanner');
     Route::POST('settings/storebanner', [SettingController::class,'bannerStore'])->name('setting.storebanner');
 =======
 >>>>>>> 1d64b09548066981c09fe97cdf06d4b244ea240f
+=======
+    Route::get('settings/banners', [SettingController::class,'bannerIndex'])->name('setting.banner');
+    Route::get('settings/addbanner', [SettingController::class,'bannerCreate'])->name('setting.addbanner');
+    Route::POST('settings/storebanner', [SettingController::class,'bannerStore'])->name('setting.storebanner');
+>>>>>>> cded0771b31f6049a0bba98559c0364b54fd4c16
     Route::resource('/service', ServiceController::class);
     Route::resource('/category', CategoryController::class);
 
